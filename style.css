@@ -91,3 +91,18 @@ footer{
     padding: 16px;
     text-decoration: none;
 }
+
+@media(max-width: 1000px){
+    footer{
+        position: relative;
+    }
+
+    header h2{
+        font-size: 22px;
+    }
+
+    .header-img{
+        height: 50px;
+        width: 50px;
+    }
+}
