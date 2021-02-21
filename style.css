@@ -1,20 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 :root {
     --dark: #212121;
     --dark-lighter: #424242;
     --light: #fafafa;
     --light-darker: #e0e0e0;
-    --orange: #f94900;
 }
 
 body{
     background-color: var(--dark-lighter);
     color: var(--light);
+    font-family: 'Titillium Web', sans-serif;
 }
 
 header{
     padding: 20px 0;
     background-color: var(--dark);
     box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.308);
+}
+
+header h2{
+    font-weight: 600;
+    font-size: 30px;
 }
 
 .header-img{
@@ -24,6 +30,20 @@ header{
     border: 2px solid var(--light);
     margin: 0;
     padding: 0;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.title::before{
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid var(--light-darker);
+    width: 1rem;
+    margin-right: 14px;
+    transform: translateY(-.6rem);
 }
 
 .card{
@@ -39,6 +59,11 @@ header{
 
 .card-img-top{
     width: 100%;
+}
+
+.paragraph{
+    line-height: 1.7em;
+    font-size: 18px;
 }
 
 .card-wrapper{
@@ -68,9 +93,6 @@ header{
 footer{
     padding: 10px 0;
     background-color: #212121b6;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 .socials-ul {
@@ -93,10 +115,6 @@ footer{
 }
 
 @media(max-width: 1000px){
-    footer{
-        position: relative;
-    }
-
     header h2{
         font-size: 22px;
     }
@@ -105,4 +123,11 @@ footer{
         height: 50px;
         width: 50px;
     }
+}
+
+.tag{
+    padding: 4px 6px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 650;
 }
